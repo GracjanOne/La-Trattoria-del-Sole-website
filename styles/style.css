@@ -3,6 +3,7 @@ html {
   font-family: "Cormorant Garamond", serif;
   font-size: 1vw;
   scroll-behavior: smooth;
+  background-color: white;
 }
 body {
   margin: 0;
@@ -16,7 +17,6 @@ body {
   height: 2%;
   background-color: #131010;
   width: 100%;
-  
 }
 #nav-container ul li {
   display: flex;
@@ -125,7 +125,6 @@ body {
   height: 100vh;
   z-index: -1000;
   max-height: 60vw;
-  
 }
 #menu-positions {
   display: flex;
@@ -157,124 +156,123 @@ body {
   margin: 1rem;
   color: #009246;
 }
-.chili{
-  width: 1rem ;
+.chili {
+  width: 1rem;
   height: 1rem;
 }
-#about-container{
+#about-container {
   color: white;
   background-color: #131010;
- 
 }
-#about-text{
+#about-text {
   display: flex;
   justify-content: space-around;
 }
-#about-container p{
- width: 50%;
- font-size: 1.4rem;
- text-align: justify;
- padding-bottom: 4%;
+#about-container p {
+  width: 50%;
+  font-size: 1.4rem;
+  text-align: justify;
+  padding-bottom: 4%;
 }
-#about-container img{
+#about-container img {
   width: 27%;
   height: 100%;
   border-radius: 1rem;
 }
-#about-container p span{
+#about-container p span {
   font-size: 2rem;
   font-weight: bold;
 }
-#about-container p span span:first-child{
+#about-container p span span:first-child {
   color: #009246;
 }
-#about-container p span span:last-child{
+#about-container p span span:last-child {
   color: #ce2b37;
 }
-.headers{
+.headers {
   text-align: center;
   font-size: 4rem;
   padding-top: 0.5%;
   margin: 0;
 }
-/*Opinions*/ 
-.opinion{
+/*Opinions*/
+.opinion {
   width: 30%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   padding: 2% 2% 2% 2%;
   margin: 3%;
   border-radius: 1rem;
 }
-.opinion-photo{
+.opinion-photo {
   width: 5rem;
   border-radius: 20rem;
 }
-.opinion-name{
+.opinion-name {
   font-weight: bold;
   font-size: 2rem;
   padding-left: 3%;
 }
-.opinion-column{
+.opinion-column {
   display: flex;
   align-items: center;
   position: relative;
 }
-.opinion-stars{
- position: absolute;
- right: 0%;
- width: 10rem;
+.opinion-stars {
+  position: absolute;
+  right: 0%;
+  width: 10rem;
 }
-.opinion-text{
+.opinion-text {
   font-size: 1.2rem;
   text-align: justify;
 }
-#opinions-container{
+#opinions-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 /*Contact*/
 
-#contact-container{
- 
+#contact-container {
   text-align: center;
   width: 100%;
 }
-#contact-container form{
- width: 100%;
+#contact-container form {
+  width: 100%;
 }
-#contact-container form input:nth-child(1), #contact-container form input:nth-child(2){
+#contact-container form input:nth-child(1),
+#contact-container form input:nth-child(2) {
   margin-top: 2%;
   width: 29.2%;
   height: 10%;
 }
-#contact-container form input:nth-child(2){
+#contact-container form input:nth-child(2) {
   margin-left: 4%;
-  
 }
-#contact-container form input:nth-child(4){
+#contact-container form input:nth-child(4) {
   width: 64.5%;
   margin-top: 2%;
   height: 10%;
 }
 #contact-container form textarea {
-  width:64.5%;
+  width: 64.5%;
   margin-top: 2%;
 }
-#contact-container form input:not(#send-button), #contact-container form textarea:not(#send-button){
+#contact-container form input:not(#send-button),
+#contact-container form textarea:not(#send-button) {
   border-radius: 2rem;
   padding: 1rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.3rem;
   color: gray;
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
   border: solid gray 1px;
- }
- #send-button{
+}
+#send-button {
   border-radius: 1rem;
   border: solid gray 1px;
-  background-color: #ce2b37 ;
-  color: white ;
+  background-color: #ce2b37;
+  color: white;
   box-shadow: -6px 4px 4px 6px rgba(0, 0, 0, 0.25);
   padding: 1%;
   font-family: "Cormorant Garamond", serif;
@@ -282,4 +280,70 @@ body {
   font-weight: bold;
   margin-top: 2%;
   width: 10%;
- }
+}
+/*Footer*/
+#footer-container ul li {
+  float: left;
+  color: white;
+  list-style: none;
+
+  width: 70%;
+}
+#footer-container ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 1vw;
+  padding: 0 0 0 1vw;
+  background-color: #131010;
+}
+#footer-items {
+  padding-left: 5px;
+}
+
+/*Phone styles*/
+#phone-pizza-background {
+  width: 70vw;
+
+  display: none;
+}
+@media (max-width: 1200px) {
+  #section-div {
+    background-image: url(../img/phone-background.jpg);
+  }
+  #phone-pizza-background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    left: 14%;
+    top: 12vw;
+  }
+  #landing-page-text{
+    display: none;
+  }
+  #landing-page-button{
+    top: 25.5vw;
+    left: -21vw;
+  }
+  #landing-page-info{
+    text-align: unset;
+  }
+  #oppening-time{
+    position: relative;
+    left: 2vw;
+    top: 41vw;
+    font-size: 2vw;
+    
+  }
+  #adress{
+    position: relative;
+    left: 68vw;
+    top: 38vw;
+    font-size: 2vw;
+  }
+  #menu-positions{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

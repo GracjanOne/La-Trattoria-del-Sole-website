@@ -12,6 +12,7 @@ send_button.addEventListener("mousedown", function(){
 });
 send_button.addEventListener("mouseup", function(){
     send_button.style.boxShadow = "-6px 4px 4px 6px rgba(0, 0, 0, 0.25)";
+    //TODO dodaj usuwanie danych po wysłaniu i zrób warunek że email nie może być pusty
     window.setTimeout(msgSend,500);
 });
 function msgSend(){
