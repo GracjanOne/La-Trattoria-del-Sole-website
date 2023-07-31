@@ -319,31 +319,81 @@ body {
     left: 14%;
     top: 12vw;
   }
-  #landing-page-text{
+  #landing-page-text {
     display: none;
   }
-  #landing-page-button{
+  #landing-page-button {
     top: 25.5vw;
     left: -21vw;
   }
-  #landing-page-info{
+  #landing-page-info {
     text-align: unset;
   }
-  #oppening-time{
+  #oppening-time {
     position: relative;
     left: 2vw;
     top: 41vw;
     font-size: 2vw;
-    
   }
-  #adress{
+  #adress {
     position: relative;
-    left: 68vw;
+    left: 65vw;
     top: 38vw;
     font-size: 2vw;
   }
-  #menu-positions{
-    display: flex;
-    flex-wrap: wrap;
+  .menu-desc {
+    font-size: 8pt;
+  }
+  #menu-positions div h2 {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 767px) {
+  #menu-positions div {
+    width: 150px;
+  }
+  #menu {
+    font-size: 19pt !important;
+  }
+  #about-container p,
+  #about-container p span {
+    font-size: 2.5rem;
+    width: 73%;
+  }
+  #about-container img {
+    display: none;
+  }
+  .headers {
+    font-size: 19pt;
+  }
+  .opinion {
+    width: 50%;
+  }
+  .opinion-text {
+    font-size: 2.5rem;
+  }
+  .opinion-photo {
+    width: 9rem;
+  }
+  .opinion-name {
+    font-size: 3rem;
+  }
+  .opinion-stars {
+    width: 15rem;
+  }
+  #contact-container form input
+ {
+    font-size: 3rem;
+  }
+  #contact-container form input:nth-child(1),
+  #contact-container form input:nth-child(2),
+  #contact-container form input:nth-child(3),
+  #contact-container form input:nth-child(4),
+  #contact-container form textarea {
+    width: 70% !important;
+    font-size: 2.5rem !important;
+  }
+  #contact-container form input:nth-child(2) {
+    margin-left: 0;
   }
 }
