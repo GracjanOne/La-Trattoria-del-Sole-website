@@ -32,11 +32,11 @@ body {
   color: white;
   text-decoration: none;
 }
-#nav-container ul li a:link {
+a:link {
   color: white;
   text-decoration: none;
 }
-#nav-container ul li a:visited {
+a:visited {
   color: white;
   text-decoration: none;
 }
@@ -125,6 +125,41 @@ body {
   height: 100vh;
   z-index: -1000;
   max-height: 60vw;
+}
+/*Hamburger menu*/
+#hamburger-menu {
+  color: white;
+  margin-right: 3%;
+  width: 4rem !important;
+  height: 4rem !important;
+  display: none;
+  cursor: pointer;
+}
+#right-menu{
+  position: fixed;
+  left: 60%;
+  height: 100%;
+  width: 40%;
+  background-color: #09a152fa;
+  z-index: 100000;
+ font-size: 2rem;
+ line-height: 300%;
+ border-radius: 1rem 0 0 1rem;
+ display: none;
+ 
+}
+#close-sidebar{
+  cursor: pointer;
+}
+#right-menu ul{
+  list-style: none;
+}
+#close-sidebar{
+  color: white;
+  position: absolute;
+  top: -1%;
+  left: 93%;
+  font-size: 3rem;
 }
 #menu-positions {
   display: flex;
@@ -348,7 +383,32 @@ body {
     font-size: 11pt;
   }
 }
+@media screen and (max-width: 1085px) {
+  #hamburger-menu {
+    display: block;
+  }
+  #nav-elements {
+    display: none;
+  }
+  #nav-container img:first-child {
+    width: 6%;
+  }
+  #section-div {
+    background-attachment: scroll;
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  #landing-page-button {
+    font-size: 2.5rem;
+    margin-top: -2%;
+  }
+ 
+}
 @media screen and (max-width: 767px) {
+  #footer-container ul li {
+    font-size: 2rem;
+  }
   #menu-positions div {
     width: 150px;
   }
@@ -357,7 +417,7 @@ body {
   }
   #about-container p,
   #about-container p span {
-    font-size: 2.5rem;
+    font-size: 3rem;
     width: 73%;
   }
   #about-container img {
@@ -367,10 +427,10 @@ body {
     font-size: 19pt;
   }
   .opinion {
-    width: 50%;
+    width: 70%;
   }
   .opinion-text {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .opinion-photo {
     width: 9rem;
@@ -381,8 +441,7 @@ body {
   .opinion-stars {
     width: 15rem;
   }
-  #contact-container form input
- {
+  #contact-container form input {
     font-size: 3rem;
   }
   #contact-container form input:nth-child(1),
